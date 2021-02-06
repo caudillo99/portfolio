@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require("body-parser");
 const app = express();
 
+const PORT = process.ENV.port || 5000
 const RECEIVER_EMAIL = "diego.caudillo@uabc.edu.mx"
 const PASSWORD = "golied12"
 
@@ -44,4 +45,4 @@ app.post('/sendEmail', (req, res)=>{
     res.redirect('/');
 });
 })
-app.listen(5000, ()=> console.log("App initialized on port 5000"));
+app.listen(PORT, ()=> console.log(`App initialized on port ${PORT}`));
