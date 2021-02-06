@@ -1,0 +1,73 @@
+body{
+    background-color: #e5e5e5;
+    font-family: 'Ubuntu', sans-serif;
+    color:#e5e5e5;
+}
+h1{ color:#e5e5e5;}
+h4{ font-weight: 900;}
+
+section{padding: 1rem 5rem;}
+
+.custom-navbar{
+    padding: 2rem 5rem;
+    background-color: #495057;
+    color: white
+}
+
+.custom-navbar-style{
+    margin: auto 0;
+    text-align: center;
+}
+.round-img{
+    border-radius:8px;
+}
+.card-round{
+    background-color:#343a40cf;
+    border-radius:8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+#portfolio{
+    margin: auto 0px;
+    padding: 1rem 10rem;
+    background: rgb(83,91,98);
+    background: -moz-linear-gradient(0deg, rgba(83,91,98,1) 0%, rgba(5,11,23,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(83,91,98,1) 0%, rgba(5,11,23,1) 100%);
+    background: linear-gradient(0deg, rgba(83,91,98,1) 0%, rgba(5,11,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#535b62",endColorstr="#050b17",GradientType=1);
+}
+
+#portfolio img{
+    width: 100%;
+}
+.dev-tech{
+    display: inline-flexbox;
+}
+.tech{
+    font-size: 1rem;
+    width: 100%;
+}
+.tech:hover{
+    color:#f77f00;
+}
+
+#contact-me{
+    background: rgb(232,233,221);
+    background: -moz-linear-gradient(0deg, rgba(232,233,221,1) 0%, rgba(133,137,140,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(232,233,221,1) 0%, rgba(133,137,140,1) 100%);
+    background: linear-gradient(0deg, rgba(232,233,221,1) 0%, rgba(133,137,140,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8e9dd",endColorstr="#85898c",GradientType=1);
+    margin: auto 0px;
+    padding: 1rem 10rem;
+}
+#contact-me h1{font-weight: 900; color:black;}
+.contact-form{
+    display: block;
+}
+.contact-form label{
+    color: #00000089;
+    padding-left:2rem;
+}
+
+.contact-form textarea{
+    height: 100px;
+}
