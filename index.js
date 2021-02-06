@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require("body-parser");
 const app = express();
 
-const PORT = process.ENV.port || 5000
+const PORT = process.env.PORT || 5000
 const RECEIVER_EMAIL = "diego.caudillo@uabc.edu.mx"
 const PASSWORD = "golied12"
 
