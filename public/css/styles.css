@@ -26,6 +26,45 @@ section{padding: 1rem 5rem;}
     border-radius:8px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+
+#about-me{
+    color: #000000a9;
+    font-size: 1.2rem;
+    display: block;
+    margin: auto 0;
+    padding: 3rem 10rem;
+    background: rgb(232,233,221);
+    background: -moz-linear-gradient(0deg, rgba(232,233,221,1) 0%, rgba(133,137,140,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(232,233,221,1) 0%, rgba(133,137,140,1) 100%);
+    background: linear-gradient(0deg, rgba(232,233,221,1) 0%, rgba(133,137,140,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8e9dd",endColorstr="#85898c",GradientType=1);
+}
+#about-me img{width:80%;}
+#about-me h1{color:#000000a5; font-weight: 900; margin: 0; padding-left: 1rem;}
+/* #about-me a{text-decoration: none;color: black;}
+#about-me i{color: black;} */
+#about-me ul li{
+    list-style: none;
+    padding-top: 1rem;
+}
+.github{
+    color: #000000a9;
+    text-decoration: none;
+}
+.github:hover{
+    color:white;
+    background-color: #000000bb;
+    border-radius: 4px;
+    padding: 0.2rem;
+}
+.personal-info{
+    padding: 1rem;
+    margin: 0;
+    border-radius: 8px;
+    background-color:#ffffff80;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+}
 #portfolio{
     margin: auto 0px;
     padding: 1rem 10rem;
@@ -39,6 +78,7 @@ section{padding: 1rem 5rem;}
 #portfolio img{
     width: 100%;
 }
+#portfolio h1{ padding-left: 1rem;}
 .dev-tech{
     display: inline-flexbox;
 }
@@ -59,15 +99,21 @@ section{padding: 1rem 5rem;}
     margin: auto 0px;
     padding: 1rem 10rem;
 }
-#contact-me h1{font-weight: 900; color:black;}
+#contact-me h1{font-weight: 900; color:#000000a5;padding-left: 1rem;}
 .contact-form{
     display: block;
 }
 .contact-form label{
-    color: #00000089;
+    color: #000000a9;
     padding-left:2rem;
 }
 
 .contact-form textarea{
     height: 100px;
+}
+
+.portfolio-img{
+   margin: 0 auto;
+   width: 50%;
+   align-items: center;
 }

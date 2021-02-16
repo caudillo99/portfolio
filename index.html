@@ -7,7 +7,7 @@
     
     <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -50,11 +50,27 @@
         </div>
     </nav>
     <!-- About section -->
-    <section id="about">
+    <section id="about-me">
         <h1>About me</h1>
-        <a target="_blank" href="Diego_Caudillo_CV.pdf">
-            <button type="button" class="btn btn-dark"><i class="fas fa-cloud-download-alt"></i> Download CV</button>
-        </a>
+        <div class="row personal-info">
+            <div class="col-lg-4 col-sm-12">
+                <img src="/public/diego.png" alt="">
+
+            </div>
+            <div class="col-lg-8 col-sm-12">
+
+                <ul>
+                    <li> <i class="fas fa-user"></i> Diego Caudillo </li>
+                    <li> <i class="fas fa-map-marker-alt"></i> Tijuana, B.C. México </li>
+                    <li> <i class="fas fa-phone-alt"></i> +52 (664) 538-1547</li>
+                    <li> <a target="_blank" class="github"  href="https://github.com/caudillo99"> <i class="fab fa-github"></i> Github/caudillo99</a> </li>
+                    <li> <a target="_blank" href="Diego_Caudillo_CV.pdf">
+                        <button type="button" class="btn btn-dark"><i class="fas fa-cloud-download-alt"></i> Download CV</button>
+                    </a> </li>
+                </ul>
+            </div>
+        </div>
+        
     </section>
 
     <!-- Resume section -->
@@ -65,6 +81,188 @@
     <!-- Portfolio section -->
     <section id="portfolio">
         <h1>Portfolio</h1>
+        <!-- Game Spot Project -->
+        <div class="card mb-3 card-round">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="round-img" src="/public/mockups/smartmockups_kkrju6v9.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_register.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_login.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_gamelist.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_gameinfo.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_personal_info.jpg" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div> <!-- End of the project description -->
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2>About</h2>
+                        <hr>
+                        <h5 class="card-title">GameSpot</h5>
+                        <p class="card-text">
+                            It's a web app about videogames news. When you create a new account, you are available to:
+                            <ul>
+                                <li>Update your personal info.</li>
+                                <li>Pick a video game from the catalog to your list.</li>
+                            </ul>
+                            Also, the app has a special user (admin) that is allowed to upload, update and delete video games, 
+                            only filling up a form with info about the game.
+                        </p>
+                        <h2>Used Stack</h2>
+                        <hr>
+                        <div class="dev-tech">
+                            <div class="row">
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
+                                    <button type="button" class="btn btn-dark tech">
+                                        <i class="fab fa-node-js "></i> NodeJS
+                                    </button>
+                                </div>
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
+                                    <button type="button" class="btn btn-dark tech">
+                                        <i class="fas fa-database"></i> MongoDB
+                                    </button>
+                                </div>
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
+                                    <button type="button" class="btn btn-dark tech">
+                                        <i class="fas fa-server"></i> Express
+                                    </button>
+                                </div>
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
+                                    <a target="_none" href="https://github.com/UABC-WebProject/GameProject">
+                                        <button type="button" style="background-color:#003049; border: 0;" class="btn btn-primary tech">
+                                            <i class="fab fa-github"></i> Source code
+                                        </button>
+                                    </a>
+                                </div>
+                                <div style="margin-top:1rem; padding: 0 3px;" class="col-sm-12 col-lg-3">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of GameSpot project -->
+        <!-- Game Spot Project -->
+        <div class="card mb-3 card-round">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <div id="carouselExampleCaptionsReservation" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-bs-target="#carouselExampleCaptionsReservation" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#carouselExampleCaptionsReservation" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#carouselExampleCaptionsReservation" data-bs-slide-to="2"></li>
+                          <li data-bs-target="#carouselExampleCaptionsReservation" data-bs-slide-to="3"></li>
+                          <li data-bs-target="#carouselExampleCaptionsReservation" data-bs-slide-to="4"></li>
+                          <li data-bs-target="#carouselExampleCaptionsReservation" data-bs-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner portfolio-img">
+                            <div class="carousel-item active">
+                                <img class="round-img" src="/public/mockups/smartmockups_home.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_login.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_user_info.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_reservation_list.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_reservation_info.png" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="round-img" src="/public/mockups/smartmockups_create_reservation.png" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptionsReservation" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptionsReservation" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2>About</h2>
+                        <hr>
+                        <h5 class="card-title">GameSpot</h5>
+                        <p class="card-text">
+                            It's a web app about videogames news. When you create a new account, you are available to:
+                            <ul>
+                                <li>Update your personal info.</li>
+                                <li>Pick a video game from the catalog to your list.</li>
+                            </ul>
+                            Also, the app has a special user (admin) that is allowed to upload, update and delete video games, 
+                            only filling up a form with info about the game.
+                        </p>
+                        <h2>Used Stack</h2>
+                        <hr>
+                        <div class="dev-tech">
+                            <div class="row">
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-2">
+                                    <button type="button" class="btn btn-dark tech">
+                                       <i class="fab fa-java"></i> Java
+                                    </button>
+                                </div>
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
+                                    <button type="button" class="btn btn-dark tech">
+                                        <i class="fas fa-database"></i> Firebase
+                                    </button>
+                                </div>
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-4">
+                                    <button type="button"  class="btn btn-dark tech">
+                                       <i class="fab fa-android"></i> Android Studio
+                                    </button>
+                                </div>
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
+                                    <a target="_none" href="https://github.com/AyudantiasReyes/HealthApp">
+                                        <button type="button" style="background-color:#003049; border: 0;" class="btn btn-primary tech">
+                                            <i class="fab fa-github"></i> Source code
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Game Spot Project -->
         <div class="card mb-3 card-round">
             <div class="row g-0">
                 <div class="col-md-5">
@@ -140,17 +338,15 @@
                                         <i class="fas fa-server"></i> Express
                                     </button>
                                 </div>
-                                <!-- <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
-                                    <button type="button" class="btn btn-dark tech">
-                                        <i class="fas fa-lock-open"></i> Passportjs
-                                    </button>
-                                </div> -->
-                                <div style="margin-top:1rem; padding: 0 3px;" class="col-sm-12 col-lg-3">
+                                <div style="margin-top:5px; padding: 0 3px ;" class="col-sm-12 col-lg-3">
                                     <a target="_none" href="https://github.com/UABC-WebProject/GameProject">
                                         <button type="button" style="background-color:#003049; border: 0;" class="btn btn-primary tech">
                                             <i class="fab fa-github"></i> Source code
                                         </button>
                                     </a>
+                                </div>
+                                <div style="margin-top:1rem; padding: 0 3px;" class="col-sm-12 col-lg-3">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -158,7 +354,6 @@
                 </div>
             </div>
         </div>
-
         
     </section>
 
@@ -180,7 +375,9 @@
                     <textarea name="comment" style="height:150px" class="form-control" id="floatingPassword" placeholder="Write your comment" required></textarea>
                     <label for="floatingPassword">Write your comment</label>
                 </div>
-                <button type="submit" class="btn btn-outline-dark">Dark</button>
+                <div class="col-lg-5 col-sm-12">
+                    <button style="margin:2rem 0;" type="submit" class="btn btn-outline-dark">Submit</button>
+                </div>
             </form>
         </div>
     </footer>
