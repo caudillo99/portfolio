@@ -45,4 +45,6 @@ app.post('/sendEmail', (req, res)=>{
     res.redirect('/');
 });
 })
-app.listen(PORT, ()=> console.log(`App initialized on port ${PORT}`));
+
+/* uncomment for deploymet */
+/* app.listen(PORT, ()=> console.log(`App initialized on port ${PORT}`)); */
